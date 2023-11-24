@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wid th, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/e243949618.js" crossorigin="anonymous"></script>
+    <title>Página de registro</title>
+</head>
+<body>
+    <header>
+        <!--Logo + barra de búsqueda-->
+        <section class="flex-logo-search">
+            <a href="http://localhost:3020/">
+                <img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo empresearial">
+            </a>
+            <!--Barra de búsqueda-->
+            <section class="input-search">
+                <input type="text" placeholder="Buscar productos, marcas"> <i class="fa-solid fa-magnifying-glass"></i>
+            </section>
+             <!--título solo tablet y desktop-->
+            <section class="titulo-centrado">
+                <i class="fa-solid fa-hand-holding-dollar"></i> 
+                <p>Compra en cuotas y sin tarjeta</p>
+            </section>
+
+        </section>
+        
+        
+        
+        <!--título centrado-->
+        <section class="titulo-centrado">
+            <i class="fa-solid fa-hand-holding-dollar"></i> 
+            <p>Compra en cuotas y sin tarjeta</p>
+        </section>
+        
+        <!--Menú-->
+        <nav>
+            <ul class="secciones">
+                <li><a href="">Ofertas</a> </li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                 <li><a href="">Ayuda</a></li> 
+            </ul>
+            <ul class="secciones">
+                <li><a href="register">Creá tu cuenta</a> <i class="fa-regular fa-address-card"></i> </li>
+                <li><a href="login">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i> </li>
+                <li><a href="">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i></li>  
+            </ul>
+     
+            <section  class="lugar-menu">
+                <div class="menu">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </div>
+            </section>
+    
+        </nav>
+    </header>
+    <main>
+
+        <section class="caja-registro">
+            <h3 class="titulo-registro-login">Crea tu cuenta Mercado Liebre</h3>
+        <form action="/views/register.html" method="post">
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre y apellido">
+            <input type="text" name="nombre-usuario" placeholder="Ingresa tu Nombre de usuari@">
+            <p>Ingresa la fecha de tu nacimiento</p>
+            <input type="date" name="nacimiento" id="nacimiento" placeholder="Seleccioa tu fecha de nacimiento">
+            <input type="text" name="domicilio" placeholder="Ingresa tu domicilio">
+            
+            <p>¿Cuál va ser tu rol?</p>
+            <input type="radio" name="rol" id="comprador" value="compra"> <label for="comprador">Comprador</label>
+            <input type="radio" name="rol" id="vendedor"> <label for="vendedor">Vendedor</label>
+            <input type="radio" name="rol" id="comprador-vendedor"> <label for="comprador-vendedor">Comprador y vendedor</label>
+            
+            <p>Selecciona las categorias de interés:</p>
+            <input type="checkbox" name="electro" id=" electro"><label for="electro">electro</label>
+            <input type="checkbox" name="moda" id="moda"><label for="moda">Moda</label>
+            <input type="checkbox" name="hogar" id="hogar"><label for="hogar">Hogar</label>
+            <input type="checkbox" name="jugueteria" id="jugueteria"><label for="jugueteria">Jugueteria</label>
+            <input type="checkbox" name="vidasana" id="vidasana"><label for="vidasana">Vida Sana</label>
+
+            <p>Sube imagen de perfil</p>
+            <input type="file" name="imagen" id="imagen" accept="image/*"> <br>
+            <button type="submit">subir imagen</button>
+
+
+            <input type="password" name="password" placeholder="Ingresa una contraseña válidad">
+            <input type="password" name="password" placeholder="Repite la contraseña">
+
+        </form>
+        </section>
+    
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
