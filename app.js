@@ -6,6 +6,8 @@ const publicPath = path.resolve(__dirname, "./public")
 
 app.use(express.static(publicPath))
 
+const port= process.env.PORT||3020
+
 app.listen(3020, () => {
     console.log("servidor corriendo en puerto 3020")
 })
