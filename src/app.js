@@ -1,3 +1,4 @@
+const { Console } = require("console");
 const express = require("express");
 const app = express ();
 const path = require("path");
@@ -8,8 +9,8 @@ app.use(express.static(publicPath))
 
 const port= process.env.PORT||3020
 
-app.listen(3020, () => {
-    console.log("servidor corriendo en puerto 3020")
+app.listen(port, () => {
+    console.log("servidor corriendo en puerto ${port}")
 })
 
 app.get("/", (req, res) => {
